@@ -1,0 +1,217 @@
+.sidenav a:hover {
+  background: linear-gradient(270deg, #00AA7E 0%, rgba(0, 170, 126, 0.2) 100%);
+  border-left: 3px solid #882DA6;
+  color: #882DA6;
+}
+
+@media screen and (max-height: 450px) {
+
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+
+}
+
+@media (min-width: 1026px) {
+
+  .sidenav {
+    z-index: 5;
+  }
+
+  .sidenav a {
+    padding: 16px 16px 16px 32px;
+    text-decoration: none;
+    color: #333333;
+    display: block;
+    transition: 0.3s;
+    font-size: 18px !important;
+    font-weight: normal !important;
+    font-family: IRANSansXFaNum-Regular, sans-serif !important;
+  }
+
+  .login {
+    display: flex;
+  }
+
+  .login-responsive {
+    display: none;
+  }
+
+  .header-container {
+    max-width: 1427px;
+  }
+
+  .header-content {
+    height: 75px;
+    padding: 0 32px;
+  }
+
+  .aside {
+    display: none !important;
+  }
+
+  .header-navbar {
+    display: flex !important;
+  }
+
+}
+
+@media (max-width: 1025px) {
+
+  .sidenav {
+    padding-top: 16px;
+    z-index: 5;
+  }
+
+  .sidenav a {
+    padding: 16px 16px 16px 32px;
+    text-decoration: none;
+    color: #333333;
+    display: block;
+    //transition: 0.3s;
+    font-size: 16px !important;
+    font-weight: normal !important;
+    font-family: IRANSansXFaNum-Regular, sans-serif !important;
+  }
+
+  .login {
+    display: none;
+  }
+
+  .login-responsive {
+    display: flex;
+  }
+
+  .header-container {
+    max-width: unset;
+    width: 100%;
+  }
+
+  .header-content {
+    padding: 16px;
+    height: 60px;
+  }
+
+  .aside {
+    display: flex !important;
+  }
+
+  .header-navbar {
+    display: none !important;
+  }
+
+}
+
+/*.sidenav > div:first-child > div:first-child {
+  width: 210px;
+  border-bottom: solid 0.5px #D8D8D8;
+}*/
+
+.my-hover:hover {
+  path {
+    fill: #00AA7E;
+  }
+}
+
+.sidenav > .item, .ct-content > div {
+  white-space: nowrap;
+  height: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 10px 25px;
+  border-left: 3px solid transparent;
+  cursor: pointer;
+}
+
+.sidenav > * {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.item-active, .sidenav > .item:hover, .ct-collapsible:hover, .ct-expand, .ct-content > div:hover {
+  background: linear-gradient(90deg, rgba(0, 79, 159, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+  border-left: 3px solid #004F9F !important;
+  color: #004F9F;
+
+  path {
+    fill: #004F9F;
+  }
+}
+
+.ct-collapsible:hover > span, .ct-expand > span {
+  color: #882DA6;
+}
+
+.ct-collapsible {
+  background: white;
+  cursor: pointer;
+  padding: 9px 25px 9px 25px;
+  width: 100%;
+  border: none;
+  text-align: right;
+  outline: none;
+  font-size: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-left: 3px solid transparent;
+}
+
+.ct-collapsible > img {
+  transition: transform 0.3s;
+}
+
+.ct-expand > img {
+  transform: rotate(-90deg);
+}
+
+.ct-content {
+  padding: 0 45px 0 0;
+  max-height: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: max-height 0.3s linear;
+}
+
+/*.ct-content > div {
+  padding-right: 15px;
+}*/
+
+.version {
+  display: flex;
+  justify-content: center;
+  align-self: end;
+  color: #495057;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+}
+
+p {
+  margin: 0;
+}
+
+.sidenav p {
+  margin-right: 16px;
+}
+
+hr {
+  margin: 0;
+}
+
+.header-logo-body {
+  padding: 16px 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.header-logo {
+  height: 45px;
+}

@@ -1,0 +1,206 @@
+<div class="header-container m-auto">
+  <div class="header-content d-flex justify-content-between align-items-center">
+
+    <!-- start::burger -->
+    <div class="d-flex align-items-center aside cursor-pointer">
+      <!--      <div [inlineSVG]="'assets/media/images/svg/header/sidebar.svg'"></div>-->
+      <!--<img src="assets/media/icons/duotune/arrows/arr001.svg" (click)="layout.openResponsiveAside()"/>-->
+    </div>
+    <!-- end::burger -->
+
+    <p (click)="layout.openResponsiveAside()"><img class="d-menu"
+                                                   src="assets/media/images/svg/header/menu_FILL0_wght300_GRAD0_opsz24.svg">
+    </p>
+    <div class="login justify-content-end w-100">
+      <button
+        class="d-flex justify-content-center align-items-center green-button-outLine body2-medium login-button cursor-pointer">
+        حساب کاربری
+      </button>
+    </div>
+
+    <!--<div *ngIf="globalVariableService.KIND === 'wp' && authService.currentUserValue.id"
+         class="list iran-sans-bold d-flex flex-column align-items-center">
+      <div class="h-100 d-flex align-items-center">
+        <div style="margin-top: 5px">حساب کاربری<i [inlineSVG]="'assets/media/icons/arrow-left.svg'"></i></div>
+      </div>
+      <div>
+        <div class="position-absolute">
+            <span (click)="Profile()" class="d-flex justify-content-between align-items-center w-100">
+              <img src="assets/media/icons/user.svg" style="margin-left: 10px"/>حساب کاربری&lt;!&ndash;<i
+              [inlineSVG]="'assets/media/icons/arrow-left.svg'"></i>&ndash;&gt;</span>
+          <span (click)="authService.logout()" class="d-flex justify-content-between align-items-center w-100">
+            <img src="assets/media/icons/sign-out.svg" style="margin-left: 10px"/>خروج از حساب&lt;!&ndash;<i
+              [inlineSVG]="'assets/media/icons/arrow-left.svg'"></i>&ndash;&gt;</span>
+        </div>
+      </div>
+    </div>-->
+    <!-- end::loginButton -->
+
+    <!-- start::loginButtonResponsive -->
+    <!--<div class="login-responsive">
+      <div [inlineSVG]="'assets/media/images/svg/header/user.svg'" class="cursor-pointer"></div>
+    </div>-->
+    <!-- end::loginButtonResponsive -->
+
+  </div>
+</div>
+
+<!-- start::sideBar -->
+<div class="sidenav" id="CYBER_TOOLS_ASIDE_RESPONSIVE" style="z-index: 100">
+  <div class="header-logo-body cursor-pointer">
+    <img alt="Nobaton sidebar logo" class="header-logo" routerLink="/"
+         src="assets/media/faradid.jpeg">
+  </div>
+  <!--  <div class="item d-flex align-items-center" routerLink="/dashboard" routerLinkActive="item-active">
+      <div class="d-flex my-hover">
+        &lt;!&ndash;<img alt="arrow left" class="icon" src="assets/media/images/svg/header/bx-category.svg">&ndash;&gt;
+        <svg fill="none" height="24" viewBox="0 0 34 35" width="34" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M14.1667 4.75H5.66667C4.88325 4.75 4.25 5.38325 4.25 6.16667V14.6667C4.25 15.4501 4.88325 16.0833 5.66667 16.0833H14.1667C14.9501 16.0833 15.5833 15.4501 15.5833 14.6667V6.16667C15.5833 5.38325 14.9501 4.75 14.1667 4.75ZM12.75 13.25H7.08333V7.58333H12.75V13.25ZM28.3333 4.75H19.8333C19.0499 4.75 18.4167 5.38325 18.4167 6.16667V14.6667C18.4167 15.4501 19.0499 16.0833 19.8333 16.0833H28.3333C29.1167 16.0833 29.75 15.4501 29.75 14.6667V6.16667C29.75 5.38325 29.1167 4.75 28.3333 4.75ZM26.9167 13.25H21.25V7.58333H26.9167V13.25ZM14.1667 18.9167H5.66667C4.88325 18.9167 4.25 19.5499 4.25 20.3333V28.8333C4.25 29.6167 4.88325 30.25 5.66667 30.25H14.1667C14.9501 30.25 15.5833 29.6167 15.5833 28.8333V20.3333C15.5833 19.5499 14.9501 18.9167 14.1667 18.9167ZM12.75 27.4167H7.08333V21.75H12.75V27.4167ZM24.0833 18.9167C20.9582 18.9167 18.4167 21.4582 18.4167 24.5833C18.4167 27.7085 20.9582 30.25 24.0833 30.25C27.2085 30.25 29.75 27.7085 29.75 24.5833C29.75 21.4582 27.2085 18.9167 24.0833 18.9167ZM24.0833 27.4167C22.5208 27.4167 21.25 26.1459 21.25 24.5833C21.25 23.0208 22.5208 21.75 24.0833 21.75C25.6459 21.75 26.9167 23.0208 26.9167 24.5833C26.9167 26.1459 25.6459 27.4167 24.0833 27.4167Z"
+            fill="#404040"/>
+        </svg>
+        <p>داشبورد</p>
+      </div>
+    </div>-->
+
+  <div class="item d-flex align-items-center" routerLink="/user/list" routerLinkActive="item-active">
+    <div class="d-flex">
+      <img src="assets/media/images/svg/user.svg" style="width: 24px;">
+      <p>کاربران</p>
+    </div>
+  </div>
+
+  <!--*ngIf="authService.currentUserValue.accessLevel=='SuperAdmin'"-->
+  <div class="item d-flex align-items-center" routerLink="/admin/list" routerLinkActive="item-active">
+    <div class="d-flex">
+      <img src="assets/media/images/svg/admin.svg" style="width: 24px;">
+      <p>ادمین‌ها</p>
+    </div>
+  </div>
+
+  <div class="item d-flex align-items-center" routerLink="/bootcamp/list" routerLinkActive="item-active">
+    <div class="d-flex">
+      <img src="assets/media/images/svg/classes.svg" style="width: 24px;">
+      <p>دوره‌ها</p>
+    </div>
+  </div>
+
+  <div class="item d-flex align-items-center" routerLink="/gallery/list" routerLinkActive="item-active">
+    <div class="d-flex">
+      <img src="assets/media/images/svg/gallery.svg" style="width: 24px;">
+      <p>گالری</p>
+    </div>
+  </div>
+
+  <!--<div class="item d-flex align-items-center" routerLink="/service/list" routerLinkActive="item-active">
+    <div class="d-flex">
+      <svg height="24" viewBox="0 -960 960 960" width="24" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M240-440h360v-80H240v80Zm0-120h360v-80H240v80Zm-80 400q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm0-80h640v-480H160v480Zm0 0v-480 480Z"/>
+      </svg>
+      <p>سرویس‌ها</p>
+    </div>
+  </div>-->
+
+  <!--<div class="item d-flex align-items-center" routerLink="/project/list" routerLinkActive="item-active">
+    <div class="d-flex">
+      <svg height="24" viewBox="0 -960 960 960" width="24" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M280-40q-33 0-56.5-23.5T200-120v-720q0-33 23.5-56.5T280-920h400q33 0 56.5 23.5T760-840v720q0 33-23.5 56.5T680-40H280Zm0-200v120h400v-120H280Zm200 100q17 0 28.5-11.5T520-180q0-17-11.5-28.5T480-220q-17 0-28.5 11.5T440-180q0 17 11.5 28.5T480-140ZM280-320h400v-400H280v400Zm0-480h400v-40H280v40Zm0 560v120-120Zm0-560v-40 40Z"/>
+      </svg>
+      <p>پروژه‌ها</p>
+    </div>
+  </div>-->
+
+  <div class="item d-flex align-items-center" routerLink="/teacher/list" routerLinkActive="item-active">
+    <div class="d-flex">
+      <img src="assets/media/images/svg/teacher.svg" style="width: 24px;">
+      <p>اساتید</p>
+    </div>
+  </div>
+
+  <div class="item d-flex align-items-center" routerLink="/graduated/list" routerLinkActive="item-active">
+    <div class="d-flex">
+      <img src="assets/media/images/svg/graduated.svg" style="width: 24px;">
+
+      <p>فارغ التحصیلان</p>
+    </div>
+  </div>
+
+  <div class="item d-flex align-items-center" routerLink="/question/list" routerLinkActive="item-active">
+    <div class="d-flex">
+      <img src="assets/media/images/svg/commen-q.svg" style="width: 24px;">
+      <p>سوالات متداول</p>
+    </div>
+  </div>
+  <!--
+    <div class="item d-flex align-items-center" routerLink="/blog/list" routerLinkActive="item-active">
+      <div class="d-flex">
+        <svg height="24" viewBox="0 -960 960 960" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M0-240v-63q0-43 44-70t116-27q13 0 25 .5t23 2.5q-14 21-21 44t-7 48v65H0Zm240 0v-65q0-32 17.5-58.5T307-410q32-20 76.5-30t96.5-10q53 0 97.5 10t76.5 30q32 20 49 46.5t17 58.5v65H240Zm540 0v-65q0-26-6.5-49T754-397q11-2 22.5-2.5t23.5-.5q72 0 116 26.5t44 70.5v63H780Zm-455-80h311q-10-20-55.5-35T480-370q-55 0-100.5 15T325-320ZM160-440q-33 0-56.5-23.5T80-520q0-34 23.5-57t56.5-23q34 0 57 23t23 57q0 33-23 56.5T160-440Zm640 0q-33 0-56.5-23.5T720-520q0-34 23.5-57t56.5-23q34 0 57 23t23 57q0 33-23 56.5T800-440Zm-320-40q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-600q0 50-34.5 85T480-480Zm0-80q17 0 28.5-11.5T520-600q0-17-11.5-28.5T480-640q-17 0-28.5 11.5T440-600q0 17 11.5 28.5T480-560Zm1 240Zm-1-280Z"/>
+        </svg>
+        <p>وبلاگ </p>
+      </div>
+    </div>
+
+    <div class="item d-flex align-items-center" routerLink="/blogtags/list" routerLinkActive="item-active">
+      <div class="d-flex">
+        <svg height="24" viewBox="0 -960 960 960" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M0-240v-63q0-43 44-70t116-27q13 0 25 .5t23 2.5q-14 21-21 44t-7 48v65H0Zm240 0v-65q0-32 17.5-58.5T307-410q32-20 76.5-30t96.5-10q53 0 97.5 10t76.5 30q32 20 49 46.5t17 58.5v65H240Zm540 0v-65q0-26-6.5-49T754-397q11-2 22.5-2.5t23.5-.5q72 0 116 26.5t44 70.5v63H780Zm-455-80h311q-10-20-55.5-35T480-370q-55 0-100.5 15T325-320ZM160-440q-33 0-56.5-23.5T80-520q0-34 23.5-57t56.5-23q34 0 57 23t23 57q0 33-23 56.5T160-440Zm640 0q-33 0-56.5-23.5T720-520q0-34 23.5-57t56.5-23q34 0 57 23t23 57q0 33-23 56.5T800-440Zm-320-40q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-600q0 50-34.5 85T480-480Zm0-80q17 0 28.5-11.5T520-600q0-17-11.5-28.5T480-640q-17 0-28.5 11.5T440-600q0 17 11.5 28.5T480-560Zm1 240Zm-1-280Z"/>
+        </svg>
+        <p>تگ بلاگ</p>
+      </div>
+    </div>
+
+    <div class="item d-flex align-items-center" routerLink="/template/main" routerLinkActive="item-active">
+      <div class="d-flex">
+        <svg height="24" viewBox="0 -960 960 960" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M0-240v-63q0-43 44-70t116-27q13 0 25 .5t23 2.5q-14 21-21 44t-7 48v65H0Zm240 0v-65q0-32 17.5-58.5T307-410q32-20 76.5-30t96.5-10q53 0 97.5 10t76.5 30q32 20 49 46.5t17 58.5v65H240Zm540 0v-65q0-26-6.5-49T754-397q11-2 22.5-2.5t23.5-.5q72 0 116 26.5t44 70.5v63H780Zm-455-80h311q-10-20-55.5-35T480-370q-55 0-100.5 15T325-320ZM160-440q-33 0-56.5-23.5T80-520q0-34 23.5-57t56.5-23q34 0 57 23t23 57q0 33-23 56.5T160-440Zm640 0q-33 0-56.5-23.5T720-520q0-34 23.5-57t56.5-23q34 0 57 23t23 57q0 33-23 56.5T800-440Zm-320-40q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-600q0 50-34.5 85T480-480Zm0-80q17 0 28.5-11.5T520-600q0-17-11.5-28.5T480-640q-17 0-28.5 11.5T440-600q0 17 11.5 28.5T480-560Zm1 240Zm-1-280Z"/>
+        </svg>
+        <p>تمپلیت</p>
+      </div>
+    </div>-->
+
+  <div class="item d-flex align-items-center" routerLink="/new-blog/list" routerLinkActive="item-active">
+    <div class="d-flex">
+      <img src="assets/media/images/svg/blogs.svg" style="width: 24px;">
+      <p>وبلاگ</p>
+    </div>
+  </div>
+
+  <div class="item d-flex align-items-center" routerLink="/uni-bootcamp/list" routerLinkActive="item-active">
+    <div class="d-flex">
+      <img src="assets/media/images/svg/uni-bootcamp.svg" style="width: 24px;">
+      <p>بوت کمپ دانشگاهی</p>
+    </div>
+  </div>
+
+  <div class="item d-flex align-items-center" routerLink="/contact-us/main" routerLinkActive="item-active">
+    <div class="d-flex">
+      <img src="assets/media/images/svg/contact-us.svg" style="width: 24px;">
+      <p>ارتباط با ما</p>
+    </div>
+  </div>
+
+  <div class="item d-flex align-items-center" routerLink="/about-us/main" routerLinkActive="item-active">
+    <div class="d-flex">
+      <img src="assets/media/images/svg/contact-us.svg" style="width: 24px;">
+      <p>درباره ما</p>
+    </div>
+  </div>
+
+  <div class="item d-flex align-items-center" routerLink="/payment/list" routerLinkActive="item-active">
+    <div class="d-flex">
+      <img src="assets/media/images/svg/payments.svg" style="width: 24px;">
+      <p>پرداختی ها</p>
+    </div>
+  </div>
+
+</div>
+
+<div (click)="layout.closeResponsiveAside(false)" id="CYBER_TOOLS_OVERLAY"></div>
+<!-- end::sideBar -->
+

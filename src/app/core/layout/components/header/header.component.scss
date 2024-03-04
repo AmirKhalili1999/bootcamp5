@@ -1,0 +1,467 @@
+.login-button {
+  height: 42px;
+  width: 150px;
+}
+
+/*.btnLogin {
+  border: 1px solid #0078A6;
+  color: #0078A6;
+  background-color: white;
+  box-sizing: border-box;
+  backdrop-filter: blur(40px);
+  border-radius: 10px;
+  padding: 9px 35px 9px 35px;
+  height: 42px;
+}
+
+.btnLogin:hover {
+  border: 1px solid #0078A6;
+  color: #0078A6;
+  background-color: #DAF3FD;
+  box-sizing: border-box;
+  backdrop-filter: blur(40px);
+  border-radius: 10px;
+  padding: 9px 35px 9px 35px;
+  height: 42px;
+}*/
+
+.list {
+  font-weight: 700;
+  color: #333333;
+  margin-left: 50px;
+  border-bottom: 1px solid transparent;
+  transition: border-color 200ms ease;
+  height: 75px;
+}
+
+.list > div {
+  padding: 0 16px;
+  cursor: pointer;
+  margin-top: -2px;
+}
+
+.list > div:last-child {
+  width: 100%;
+  height: 4px;
+  background: transparent;
+  border-radius: 5px 5px 0 0;
+  transform: translate(0, 1px);
+  transition: background-color 0.3s;
+}
+
+.list > div:first-child > div:first-child > i {
+  display: inline-block;
+  margin-right: 14.4px;
+  transform: rotate(-90deg);
+  transition: transform 0.3s;
+}
+
+.list > div:first-child:hover > div:first-child > i {
+  transform: rotate(90deg);
+}
+
+.list > div:first-child:hover {
+  color: #0078A6;
+}
+
+.list > div:first-child:hover + div:last-child, .list > div:last-child:hover {
+  background: #0078A6;
+}
+
+.list > div:last-child > div > span {
+  height: 0;
+  background: white;
+  overflow: hidden;
+}
+
+.list > div:last-child > div > span > i {
+  display: inline-block;
+  margin-right: 18px;
+}
+
+.list > div:last-child > div {
+  box-shadow: 0 4px 7px 0 #2d2d2d24;
+  width: max-content;
+  /*right: -30%;*/
+  left: 0;
+  transform: translateY(4px);
+  /*top: -33px;*/
+}
+
+/*.login-button {
+  box-shadow: 0 4px 7px 0 #2d2d2d24;
+  width: 220px;
+  !*right: -30%;*!
+  left: 0;
+  transform: translateY(4px);
+  !*top: -33px;*!
+}*/
+
+.hover-red {
+  background-color: #ffffff !important;
+  color: #FF4848 !important;
+}
+
+.list > div:first-child:hover + div:last-child > div > span, .list > div:last-child:hover > div > span {
+  opacity: 1;
+  height: unset;
+  padding: 13px 20px;
+}
+
+.list > div:last-child > div > span {
+  opacity: 0;
+  display: block;
+  font-size: 14px;
+  font-weight: normal;
+  color: #333333;
+  transition-property: color, background-color, opacity;
+  transition-duration: 0.3s;
+}
+
+.list > div:last-child > div > span:last-child {
+  border-radius: 0 0 3px 3px;
+}
+
+.list > div:last-child > div > span:hover {
+  background-color: #DAF3FD;
+  color: #0078A6;
+}
+
+.list > div:last-child > div > span:hover > i > svg > path {
+  fill: #0078A6 !important;
+}
+
+.sidenav a:hover {
+  background: linear-gradient(90deg, rgba(0, 79, 159, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+  border-left: 3px solid #004F9F !important;
+  color: #004F9F;
+
+  path {
+    fill: #004F9F;
+  }
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+
+}
+
+#CYBER_TOOLS_OVERLAY {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(64, 64, 64, 0.4);
+  //background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+@media (min-width: 1026px) {
+
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+    //transition: 0.3s;
+    padding-top: 24px;
+    z-index: 5;
+  }
+
+  .sidenav a {
+    padding: 16px 16px 16px 32px;
+    text-decoration: none;
+    color: #333333;
+    display: block;
+    transition: 0.3s;
+    font-size: 18px !important;
+    font-weight: normal !important;
+    font-family: IRANSansXFaNum-Regular, sans-serif !important;
+  }
+
+  .login {
+    display: flex;
+  }
+
+  .login-responsive {
+    display: none;
+  }
+
+  .header-container {
+    max-width: 1366px;
+  }
+
+  .header-content {
+    height: 75px;
+    padding: 0 16px;
+  }
+
+  .aside {
+    display: none !important;
+  }
+
+  .header-navbar {
+    display: flex !important;
+  }
+
+}
+
+@media (max-width: 1025px) {
+
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+    transition: 0.5s;
+    // padding-top: 16px;
+    z-index: 5;
+  }
+
+  .sidenav a {
+    padding: 16px 16px 16px 32px;
+    text-decoration: none;
+    color: #333333;
+    display: block;
+    //transition: 0.3s;
+    font-size: 16px !important;
+    font-weight: normal !important;
+    font-family: IRANSansXFaNum-Regular, sans-serif !important;
+  }
+
+  .login {
+    display: flex;
+  }
+
+  .login-responsive {
+    display: flex;
+  }
+
+  .header-container {
+    max-width: unset;
+    width: 100%;
+  }
+
+  .header-content {
+    padding: 16px;
+    height: 60px;
+  }
+
+  .aside {
+    display: flex !important;
+  }
+
+  .header-navbar {
+    display: none !important;
+  }
+
+  /*  .btnLogin {
+      border: 1px solid #0078A6;
+      color: #0078A6;
+      background-color: white;
+      box-sizing: border-box;
+      backdrop-filter: blur(40px);
+      border-radius: 10px;
+      padding: 9px;
+      height: 42px;
+    }*/
+
+}
+
+.sidenav > .item, .ct-content > div {
+  white-space: nowrap;
+  height: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 10px 25px;
+  border-left: 3px solid transparent;
+  cursor: pointer;
+}
+
+/*.sidenav > .item:first-child{
+  margin-top: 24px;
+}*/
+
+.my-hover:hover {
+  path {
+    fill: #004F9F;
+  }
+}
+
+.sidenav > * {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.sidenav > .item:hover, .ct-collapsible:hover, .ct-expand, .ct-content > div:hover {
+  background: linear-gradient(90deg, rgba(0, 170, 126, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+  border-left: 3px solid #004F9F !important;
+  color: #004F9F;
+
+  path {
+    fill: #004F9F;
+  }
+}
+
+.item-active, .sidenav > .item:hover, .ct-collapsible:hover, .ct-expand, .ct-content > div:hover {
+  background: linear-gradient(90deg, rgba(0, 79, 159, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+  border-left: 3px solid #004F9F !important;
+  color: #004F9F;
+
+  path {
+    fill: #004F9F;
+  }
+}
+
+.ct-collapsible:hover > span, .ct-expand > span {
+  color: #0a74a8;
+}
+
+.ct-collapsible {
+  background: white;
+  cursor: pointer;
+  padding: 9px 25px 9px 14px;
+  width: 100%;
+  border: none;
+  text-align: right;
+  outline: none;
+  font-size: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-left: 3px solid transparent;
+}
+
+.ct-collapsible > span {
+  transition: transform 0.3s;
+}
+
+.ct-expand > span {
+  transform: rotate(-90deg);
+}
+
+.ct-content {
+  padding: 0 18px 0 0;
+  max-height: 0;
+  //white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: max-height 0.3s linear;
+}
+
+.ct-content > div {
+  padding-right: 15px;
+}
+
+.d-menu {
+  display: none;
+}
+
+@media (max-width: 991px) {
+
+  .d-menu {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+
+
+  .user-list-res {
+    display: block !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .user-list {
+    display: none !important;
+  }
+
+  .list > div {
+    padding: 0 16px;
+    cursor: pointer;
+    margin-top: -6px;
+  }
+
+}
+
+@media (min-width: 769px) {
+
+  .user-list-res {
+    display: none !important;
+    padding: 0 !important;
+  }
+
+  .user-list {
+    display: block !important;
+  }
+
+}
+
+.header-logo-body {
+  padding: 16px 24px;
+}
+
+.header-logo {
+  height: 45px;
+}
+
+.version {
+  display: flex;
+  justify-content: center;
+  align-self: end;
+  color: #495057;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+}
+
+p {
+  margin: 0;
+}
+
+.sidenav p {
+  margin-right: 16px;
+}
+
+hr {
+  margin: 0;
+}

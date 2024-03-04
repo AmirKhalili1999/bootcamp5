@@ -1,0 +1,119 @@
+.navy-blue-button {
+  background: #003462;
+  border-radius: 14px;
+  max-width: 336px;
+  height: 48px;
+  color: white;
+  padding: 11px 21px 11px 21px;
+}
+
+.navy-blue-button:hover,
+.navy-blue-button:active,
+.navy-blue-button:focus {
+  background: #00213E;
+  border-radius: 14px;
+  max-width: 336px;
+  height: 48px;
+  color: white;
+  padding: 11px 21px 11px 21px;
+}
+
+.navy-blue-button:disabled {
+  background: #D8D8D8;
+  border-radius: 14px;
+  max-width: 336px;
+  height: 48px;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 11px 21px 11px 21px;
+}
+
+.navy-blue-outline-button {
+  border: solid 1px #003462;
+  border-radius: 14px;
+  max-width: 336px;
+  height: 48px;
+  color: #00213E;
+  padding: 11px 21px 11px 21px;
+}
+
+.navy-blue-outline-button:hover,
+.navy-blue-outline-button:active,
+.navy-blue-outline-button:focus {
+  border: solid 1px #00213E;
+  border-radius: 14px;
+  max-width: 336px;
+  height: 48px;
+  color: #00213E;
+  padding: 11px 21px 11px 21px;
+}
+
+.navy-blue-outline-button:disabled {
+  background: #D8D8D8;
+  border: none;
+  border-radius: 14px;
+  max-width: 336px;
+  height: 48px;
+  color: white;
+  padding: 11px 21px 11px 21px;
+}
+
+.navy-red-button {
+  background: #D50B12;
+  border-radius: 14px;
+  max-width: 336px;
+  height: 48px;
+  color: white;
+  padding: 11px 21px 11px 21px;
+}
+
+.navy-red-button:hover,
+.navy-red-button:active,
+.navy-red-button:focus {
+  background: #D50B12;
+  border-radius: 14px;
+  max-width: 336px;
+  height: 48px;
+  color: white;
+  padding: 11px 21px 11px 21px;
+}
+
+.navy-red-button:disabled {
+  background: #D8D8D8;
+  border-radius: 14px;
+  max-width: 336px;
+  height: 48px;
+  color: white;
+  padding: 11px 21px 11px 21px;
+}
+
+.navy-red-outline-button {
+  border: solid 1px #D50B12;
+  border-radius: 14px;
+  max-width: 336px;
+  height: 48px;
+  color: #D50B12;
+  padding: 11px 21px 11px 21px;
+}
+
+.navy-red-outline-button:hover,
+.navy-red-outline-button:active,
+.navy-red-outline-button:focus {
+  border: solid 1px #D50B12;
+  border-radius: 14px;
+  max-width: 336px;
+  height: 48px;
+  color: #D50B12;
+  padding: 11px 21px 11px 21px;
+}
+
+.navy-red-outline-button:disabled {
+  background: #D8D8D8;
+  border: none;
+  border-radius: 14px;
+  max-width: 336px;
+  height: 48px;
+  color: white;
+  padding: 11px 21px 11px 21px;
+}

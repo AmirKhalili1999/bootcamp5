@@ -1,0 +1,62 @@
+<p-table
+  #dt [filterDelay]="0" [loading]="loading" [paginator]="true" [responsiveLayout]="'scroll'" [responsive]="true"
+  [rowHover]="true"
+  [rowsPerPageOptions]="[10,25,50,100,200,250,300,350,400,450,500]" [rows]="50" [showCurrentPageReport]="false"
+  [value]="data"
+  currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
+  dataKey="id" styleClass="p-datatable-customers">
+  <ng-template pTemplate="caption">
+    <div class="row w-100 m-0 p-0">
+      <div [ngClass]="search ? '' : 'd-flex align-items-center'"
+           class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 m-0 p-0 d-flex align-items-center">
+        <div class="d-flex align-items-center">
+          <p class="font-18-bold" style="margin: 0 !important;">{{tableName ? tableName : ''}}</p>
+          <div *ngIf="search" class="vl"></div>
+          <div *ngIf="search" class="search">
+            <!--             <img src="assets/pic/search.svg"/>-->
+            <input (keyup)="searchKey($event)" class="search-input" placeholder="جستجو"/>
+          </div>
+        </div>
+      </div>
+      <div *ngIf="addBtn" class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 m-0 p-0 d-flex justify-content-end">
+        <button (click)="btnClick()" class="green-button body1-medium button"><span
+          class="font-16-regular text-white">{{addBtnText ? addBtnText : ''}}</span></button>
+      </div>
+    </div>
+  </ng-template>
+  <ng-template pTemplate="header">
+    <tr>
+      <th *ngFor="let column of columns" pSortableColumn="{{column?.value ? column?.value : ''}}">
+        {{column?.key}}
+        <p-sortIcon *ngIf="column?.sort" field="{{column?.value ? column?.value : ''}}"></p-sortIcon>
+      </th>
+    </tr>
+  </ng-template>
+  <ng-template let-customer pTemplate="body">
+    <tr>
+      <td *ngFor="let column of columns">
+        <span *ngIf="column.type != 'detail' && column.type != 'img'" class="p-column-title">{{column?.key}}</span>
+        <span *ngIf="column.type != 'detail' && column.type != 'img'">{{customer[column?.value]}}</span>
+        <img *ngIf="column.type == 'img'" style="width: 100px;height: 100px;object-fit: cover;border-radius: 15px"
+             [src]="customer[column?.value]"/>
+        <span (click)="rowClick(customer)" *ngIf="column.type == 'detail'" style="cursor: pointer">
+
+<svg height="24" viewBox="0 -960 960 960" width="24" xmlns="http://www.w3.org/2000/svg"><path
+  d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z"/></svg>
+        </span>
+        <span (click)="rowClick(customer)" *ngIf="column.type == 'start'" style="cursor: pointer">شروع</span>
+        <span (click)="rowClick(customer)" *ngIf="column.type == 'edit'" style="cursor: pointer">ویرایش و حذف</span>
+        <span (click)="rowClick(customer)" *ngIf="column.type == 'delete'" style="cursor: pointer" class="text-danger">حذف</span>
+        <span (click)="rowClick(customer)" *ngIf="column.type == 'status'"
+              style="cursor: pointer;padding: 5px 18px;border-radius: 10px; background: #0b3052;font-size: 15px;color:white;">مشاهده</span>
+      </td>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="emptymessage">
+    <tr>
+      <td class="font-16-regular" colspan="8">{{noDataText ? noDataText : 'دیتایی یافت نشد'}}</td>
+    </tr>
+  </ng-template>
+</p-table>
+
+

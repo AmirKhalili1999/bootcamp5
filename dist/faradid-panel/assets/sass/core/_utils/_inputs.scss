@@ -1,0 +1,32 @@
+.input-nobaton {
+  outline: none;
+  height: 48px;
+  border: 1px solid #979797;
+  box-sizing: border-box;
+  border-radius: 14px;
+  padding: 12px 18px 12px 18px;
+}
+
+.input-nobaton:focus {
+  height: 48px;
+  border: 1px solid #004F9F !important;
+  box-sizing: border-box;
+  border-radius: 14px;
+}
+
+.input-nobaton:active {
+  height: 48px;
+  border: 1px solid #004F9F;
+  box-sizing: border-box;
+  border-radius: 14px;
+}
+
+.input-nobaton-error {
+  outline: none;
+  height: 48px;
+  border: 1px solid #FF4848;
+  box-sizing: border-box;
+  border-radius: 14px;
+}
+
+

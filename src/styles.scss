@@ -1,0 +1,95 @@
+// angular material
+@use '../node_modules/@angular/material' as mat;
+
+@include mat.core();
+
+// bootstrap
+@import "~bootstrap/dist/css/bootstrap.css";
+
+// fonts
+// @import "assets/sass/core/fonts.farsi";
+
+// nobaton core
+@import "assets/sass/core/core";
+
+@import "assets/css/nobaton.rtl.css";
+
+.mat-mdc-dialog-container .mdc-dialog__surface {
+  padding: 21px !important;
+  border-radius: 20px !important;
+  min-width: 400px !important;
+}
+
+p-inputnumber, .p-inputnumber {
+  width: 100%;
+}
+
+::ng-deep {
+  p-inputnumber, .p-inputnumber {
+    width: 100%;
+  }
+}
+
+th {
+  padding: 10px !important;
+  text-align: center !important;
+}
+
+td {
+  padding: 15px !important;
+  text-align: center !important;
+}
+
+.myHr {
+  width: 100%;
+  height: 2px;
+}
+
+.cdk-overlay-pane {
+  width: 100px !important;
+  max-width: 90vw !important;
+  height: fit-content !important;
+}
+
+::ng-deep {
+  .mat-mdc-dialog-container .mdc-dialog__surface {
+    padding: 21px !important;
+    border-radius: 20px !important;
+    min-width: 400px !important;
+  }
+
+  .cdk-overlay-pane {
+    width: 100px !important;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .mat-mdc-dialog-container .mdc-dialog__surface {
+    padding: 21px !important;
+    border-radius: 20px !important;
+    min-width: 100% !important;
+  }
+
+  .cdk-overlay-pane {
+    width: 100% !important;
+    height: fit-content !important;
+  }
+
+  .cdk-global-overlay-wrapper {
+    align-items: center !important;
+  }
+
+  ::ng-deep {
+
+    .cdk-overlay-pane {
+      width: 100px !important;
+    }
+
+    .mat-mdc-dialog-container .mdc-dialog__surface {
+      padding: 21px !important;
+      border-radius: 0 !important;
+      min-width: 100% !important;
+    }
+  }
+}

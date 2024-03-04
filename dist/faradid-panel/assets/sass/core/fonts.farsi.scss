@@ -1,0 +1,375 @@
+@import '_utils/colors';
+
+@font-face {
+  font-family: IRANSansXFaNum-Bold;
+  src: url('../../fonts/IRANSansXFaNum-Bold.woff');
+}
+
+@font-face {
+  font-family: IRANSansXFaNum-Regular;
+  src: url('../../fonts/IRANSansXFaNum-Regular.woff');
+}
+
+@font-face {
+  font-family: IRANSansXFaNum-Light;
+  src: url('../../fonts/IRANSansXFaNum-Light.woff');
+}
+
+.font-48-bold {
+  font-family: IRANSansXFaNum-Bold, sans-serif;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 70px;
+}
+
+.font-48-regular {
+  font-family: IRANSansXFaNum-Regular, sans-serif;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 70px;
+}
+
+.font-48-light {
+  font-family: IRANSansXFaNum-Light, sans-serif;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 70px;
+}
+
+.font-32-bold {
+  font-family: IRANSansXFaNum-Bold, sans-serif;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 50px;
+}
+
+.font-32-regular {
+  font-family: IRANSansXFaNum-Regular, sans-serif;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 50px;
+}
+
+.font-32-light {
+  font-family: IRANSansXFaNum-Light, sans-serif;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 50px;
+}
+
+.font-28-bold {
+  font-family: IRANSansXFaNum-Bold, sans-serif;
+  font-style: normal;
+  font-size: 28px;
+  line-height: 36px;
+}
+
+.font-22-bold {
+  font-family: IRANSansXFaNum-Bold, sans-serif !important;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 36px;
+}
+
+.font-22-regular {
+  font-family: IRANSansXFaNum-Regular, sans-serif;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 36px;
+}
+
+.font-22-light {
+  font-family: IRANSansXFaNum-Light, sans-serif;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 36px;
+}
+
+.font-18-bold {
+  font-family: IRANSansXFaNum-Bold, sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 29px;
+}
+
+.font-18-regular {
+  font-family: IRANSansXFaNum-Regular, sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 29px;
+}
+
+.font-18-light {
+  font-family: IRANSansXFaNum-Light, sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 29px;
+}
+
+.font-16-bold {
+  font-family: IRANSansXFaNum-Bold, sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.font-16-regular {
+  font-family: IRANSansXFaNum-Regular, sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.font-16-light {
+  font-family: IRANSansXFaNum-Light, sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.font-14-bold {
+  font-family: IRANSansXFaNum-Bold, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.font-14-regular {
+  font-family: IRANSansXFaNum-Regular, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.font-14-light {
+  font-family: IRANSansXFaNum-Light, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.font-12-bold {
+  font-family: IRANSansXFaNum-Bold, sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.font-12-regular {
+  font-family: IRANSansXFaNum-Regular, sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.font-12-light {
+  font-family: IRANSansXFaNum-Light, sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.font-10-bold {
+  font-family: IRANSansXFaNum-Bold, sans-serif;
+  font-style: normal;
+  font-size: 10px;
+  line-height: 16px;
+}
+
+.font-10-regular {
+  font-family: IRANSansXFaNum-Regular, sans-serif;
+  font-style: normal;
+  font-size: 10px;
+  line-height: 16px;
+}
+
+.font-10-light {
+  font-family: IRANSansXFaNum-Light, sans-serif;
+  font-style: normal;
+  font-size: 10px;
+  line-height: 16px;
+}
+
+* {
+  font-family: IRANSansXFaNum-Regular, sans-serif;
+}
+
+.mat-mdc-option .mdc-list-item__primary-text {
+  font-family: IRANSansXFaNum-Regular, sans-serif !important;
+}
+
+::ng-deep {
+  .mat-mdc-option .mdc-list-item__primary-text {
+    font-family: IRANSansXFaNum-Regular, sans-serif !important;
+  }
+}
+
+span {
+  font-family: IRANSansXFaNum-Regular, sans-serif;
+}
+
+p {
+  font-family: IRANSansXFaNum-Regular, sans-serif;
+  /*margin: 0 !important;*/
+}
+
+
+H1, H2, H3, H4, H5 {
+  font-family: IRANSansXFaNum-Bold, sans-serif;
+}
+
+@media (max-width: 768px) {
+  .font-48-bold {
+    font-family: IRANSansXFaNum-Bold, sans-serif;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 70px;
+  }
+
+  .font-48-regular {
+    font-family: IRANSansXFaNum-Regular, sans-serif;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 70px;
+  }
+
+  .font-48-light {
+    font-family: IRANSansXFaNum-Light, sans-serif;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 70px;
+  }
+
+  .font-32-bold {
+    font-family: IRANSansXFaNum-Bold, sans-serif;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 50px;
+  }
+
+  .font-32-regular {
+    font-family: IRANSansXFaNum-Regular, sans-serif;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 50px;
+  }
+
+  .font-32-light {
+    font-family: IRANSansXFaNum-Light, sans-serif;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 50px;
+  }
+
+  .font-28-bold {
+    font-family: IRANSansXFaNum-Bold, sans-serif;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 36px;
+  }
+
+  .font-22-bold {
+    font-family: IRANSansXFaNum-Bold, sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 36px;
+  }
+
+  .font-22-regular {
+    font-family: IRANSansXFaNum-Regular, sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 36px;
+  }
+
+  .font-22-light {
+    font-family: IRANSansXFaNum-Light, sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 36px;
+  }
+
+  .font-18-bold {
+    font-family: IRANSansXFaNum-Bold, sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 29px;
+  }
+
+  .font-18-regular {
+    font-family: IRANSansXFaNum-Regular, sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 29px;
+  }
+
+  .font-18-light {
+    font-family: IRANSansXFaNum-Light, sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 29px;
+  }
+
+  .font-16-bold {
+    font-family: IRANSansXFaNum-Bold, sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .font-16-regular {
+    font-family: IRANSansXFaNum-Regular, sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .font-16-light {
+    font-family: IRANSansXFaNum-Light, sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .font-14-bold {
+    font-family: IRANSansXFaNum-Bold, sans-serif;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 21px;
+  }
+
+  .font-14-regular {
+    font-family: IRANSansXFaNum-Regular, sans-serif;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 21px;
+  }
+
+  .font-14-light {
+    font-family: IRANSansXFaNum-Light, sans-serif;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 21px;
+  }
+
+  .font-12-bold {
+    font-family: IRANSansXFaNum-Bold, sans-serif;
+    font-style: normal;
+    font-size: 10px;
+    line-height: 18px;
+  }
+
+  .font-12-regular {
+    font-family: IRANSansXFaNum-Regular, sans-serif;
+    font-style: normal;
+    font-size: 10px;
+    line-height: 18px;
+  }
+
+  .font-12-light {
+    font-family: IRANSansXFaNum-Light, sans-serif;
+    font-style: normal;
+    font-size: 10px;
+    line-height: 18px;
+  }
+}

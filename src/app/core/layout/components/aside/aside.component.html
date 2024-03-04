@@ -1,0 +1,157 @@
+<!-- start::sideBar -->
+<div class="sidenav body1-medium" style="height: 96vh; overflow-y: auto">
+  <div class="header-logo-body cursor-pointer">
+    <img alt="Nobaton sidebar logo" class="header-logo" routerLink="/"
+         src="assets/media/faradid.jpeg">
+  </div>
+
+  <div class="item d-flex align-items-center" routerLink="/user/list" routerLinkActive="item-active">
+    <div class="d-flex">
+      <img src="assets/media/images/svg/user.svg" style="width: 24px;">
+      <p>کاربران</p>
+    </div>
+  </div>
+
+  <!--*ngIf="authService.currentUserValue.accessLevel=='SuperAdmin'"-->
+  <div class="item d-flex align-items-center" routerLink="/admin/list" routerLinkActive="item-active">
+    <div class="d-flex">
+      <img src="assets/media/images/svg/admin.svg" style="width: 24px;">
+      <p>ادمین‌ها</p>
+    </div>
+  </div>
+
+  <div class="item d-flex align-items-center" routerLink="/bootcamp/list" routerLinkActive="item-active">
+    <div class="d-flex">
+      <img src="assets/media/images/svg/classes.svg" style="width: 24px;">
+
+      <p>دوره‌ها</p>
+    </div>
+  </div>
+
+  <div class="item d-flex align-items-center" routerLink="/gallery/list" routerLinkActive="item-active">
+    <div class="d-flex">
+      <img src="assets/media/images/svg/gallery.svg" style="width: 24px;">
+      <p>گالری</p>
+    </div>
+  </div>
+
+  <!--<div class="item d-flex align-items-center" routerLink="/service/list" routerLinkActive="item-active">
+    <div class="d-flex">
+      <svg height="24" viewBox="0 -960 960 960" width="24" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M240-440h360v-80H240v80Zm0-120h360v-80H240v80Zm-80 400q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm0-80h640v-480H160v480Zm0 0v-480 480Z"/>
+      </svg>
+      <p>سرویس‌ها</p>
+    </div>
+  </div>-->
+
+  <!--<div class="item d-flex align-items-center" routerLink="/project/list" routerLinkActive="item-active">
+    <div class="d-flex">
+      <svg height="24" viewBox="0 -960 960 960" width="24" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M280-40q-33 0-56.5-23.5T200-120v-720q0-33 23.5-56.5T280-920h400q33 0 56.5 23.5T760-840v720q0 33-23.5 56.5T680-40H280Zm0-200v120h400v-120H280Zm200 100q17 0 28.5-11.5T520-180q0-17-11.5-28.5T480-220q-17 0-28.5 11.5T440-180q0 17 11.5 28.5T480-140ZM280-320h400v-400H280v400Zm0-480h400v-40H280v40Zm0 560v120-120Zm0-560v-40 40Z"/>
+      </svg>
+      <p>پروژه‌ها</p>
+    </div>
+  </div>-->
+
+  <div class="item d-flex align-items-center" routerLink="/teacher/list" routerLinkActive="item-active">
+    <div class="d-flex">
+      <img src="assets/media/images/svg/teacher.svg" style="width: 24px;">
+      <p>اساتید</p>
+    </div>
+  </div>
+
+  <div class="item d-flex align-items-center" routerLink="/graduated/list" routerLinkActive="item-active">
+    <div class="d-flex">
+      <img src="assets/media/images/svg/graduated.svg" style="width: 24px;">
+      <p>فارغ التحصیلان</p>
+    </div>
+  </div>
+
+
+  <div class="item d-flex align-items-center" routerLink="/question/list" routerLinkActive="item-active">
+    <div class="d-flex">
+      <img src="assets/media/images/svg/commen-q.svg" style="width: 24px;">
+      <p>سوالات متداول</p>
+    </div>
+  </div>
+
+  <!--  <div class="item d-flex align-items-center" routerLink="/blog/list" routerLinkActive="item-active">
+      <div class="d-flex">
+        <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M8.8 10.625q-.525 0-.788-.475-.262-.475.013-.925L11.225 4q.275-.45.775-.45t.775.45l3.2 5.225q.275.45.013.925-.263.475-.788.475Zm8.7 11q-1.725 0-2.925-1.2-1.2-1.2-1.2-2.925 0-1.725 1.2-2.925 1.2-1.2 2.925-1.2 1.725 0 2.925 1.2 1.2 1.2 1.2 2.925 0 1.725-1.2 2.925-1.2 1.2-2.925 1.2Zm-13.225-.5q-.375 0-.637-.262-.263-.263-.263-.663v-5.425q0-.375.263-.638.262-.262.662-.262h5.425q.375 0 .638.262.262.263.262.663v5.425q0 .375-.262.638-.263.262-.663.262Zm13.225-1q1.1 0 1.863-.762.762-.763.762-1.863t-.762-1.863q-.763-.762-1.863-.762t-1.862.762q-.763.763-.763 1.863t.763 1.863q.762.762 1.862.762Zm-12.625-.5h4.25v-4.25h-4.25Zm4.975-10.5h4.3L12 5.65Zm2.15 0Zm-2.875 6.25ZM17.5 17.5Z"/>
+        </svg>
+        <p>وبلاگ </p>
+      </div>
+    </div>
+
+    <div class="item d-flex align-items-center" routerLink="/blogtags/list" routerLinkActive="item-active">
+      <div class="d-flex">
+        <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M8.8 10.625q-.525 0-.788-.475-.262-.475.013-.925L11.225 4q.275-.45.775-.45t.775.45l3.2 5.225q.275.45.013.925-.263.475-.788.475Zm8.7 11q-1.725 0-2.925-1.2-1.2-1.2-1.2-2.925 0-1.725 1.2-2.925 1.2-1.2 2.925-1.2 1.725 0 2.925 1.2 1.2 1.2 1.2 2.925 0 1.725-1.2 2.925-1.2 1.2-2.925 1.2Zm-13.225-.5q-.375 0-.637-.262-.263-.263-.263-.663v-5.425q0-.375.263-.638.262-.262.662-.262h5.425q.375 0 .638.262.262.263.262.663v5.425q0 .375-.262.638-.263.262-.663.262Zm13.225-1q1.1 0 1.863-.762.762-.763.762-1.863t-.762-1.863q-.763-.762-1.863-.762t-1.862.762q-.763.763-.763 1.863t.763 1.863q.762.762 1.862.762Zm-12.625-.5h4.25v-4.25h-4.25Zm4.975-10.5h4.3L12 5.65Zm2.15 0Zm-2.875 6.25ZM17.5 17.5Z"/>
+        </svg>
+        <p>تگ بلاگ </p>
+      </div>
+    </div>
+
+    <div class="item d-flex align-items-center" routerLink="/template/main" routerLinkActive="item-active">
+      <div class="d-flex">
+        <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M8.8 10.625q-.525 0-.788-.475-.262-.475.013-.925L11.225 4q.275-.45.775-.45t.775.45l3.2 5.225q.275.45.013.925-.263.475-.788.475Zm8.7 11q-1.725 0-2.925-1.2-1.2-1.2-1.2-2.925 0-1.725 1.2-2.925 1.2-1.2 2.925-1.2 1.725 0 2.925 1.2 1.2 1.2 1.2 2.925 0 1.725-1.2 2.925-1.2 1.2-2.925 1.2Zm-13.225-.5q-.375 0-.637-.262-.263-.263-.263-.663v-5.425q0-.375.263-.638.262-.262.662-.262h5.425q.375 0 .638.262.262.263.262.663v5.425q0 .375-.262.638-.263.262-.663.262Zm13.225-1q1.1 0 1.863-.762.762-.763.762-1.863t-.762-1.863q-.763-.762-1.863-.762t-1.862.762q-.763.763-.763 1.863t.763 1.863q.762.762 1.862.762Zm-12.625-.5h4.25v-4.25h-4.25Zm4.975-10.5h4.3L12 5.65Zm2.15 0Zm-2.875 6.25ZM17.5 17.5Z"/>
+        </svg>
+        <p>تمپلیت</p>
+      </div>
+    </div>-->
+
+  <div class="item d-flex align-items-center" routerLink="/new-blog/list" routerLinkActive="item-active">
+    <div class="d-flex">
+      <img src="assets/media/images/svg/blogs.svg" style="width: 24px;">
+      <p>وبلاگ</p>
+    </div>
+  </div>
+
+  <div class="item d-flex align-items-center" routerLink="/uni-bootcamp/list" routerLinkActive="item-active">
+    <div class="d-flex">
+      <img src="assets/media/images/svg/uni-bootcamp.svg" style="width: 24px;">
+      <p>بوت کمپ دانشگاهی</p>
+    </div>
+  </div>
+
+  <div class="item d-flex align-items-center" routerLink="/contact-us/main" routerLinkActive="item-active">
+    <div class="d-flex">
+      <img src="assets/media/images/svg/contact-us.svg" style="width: 24px;">
+      <p>ارتباط با ما</p>
+    </div>
+  </div>
+
+  <div class="item d-flex align-items-center" routerLink="/about-us/main" routerLinkActive="item-active">
+    <div class="d-flex">
+      <img src="assets/media/images/svg/contact-us.svg" style="width: 24px;">
+      <p>درباره ما</p>
+    </div>
+  </div>
+
+  <div class="item d-flex align-items-center" routerLink="/payment/list" routerLinkActive="item-active">
+    <div class="d-flex">
+      <img src="assets/media/images/svg/payments.svg" style="width: 24px;">
+      <p>پرداختی ها</p>
+    </div>
+  </div>
+
+  <!--<div class="item d-flex align-items-center" routerLink="/bootcamp/list" routerLinkActive="item-active">
+    <div class="d-flex">
+      <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M8.8 10.625q-.525 0-.788-.475-.262-.475.013-.925L11.225 4q.275-.45.775-.45t.775.45l3.2 5.225q.275.45.013.925-.263.475-.788.475Zm8.7 11q-1.725 0-2.925-1.2-1.2-1.2-1.2-2.925 0-1.725 1.2-2.925 1.2-1.2 2.925-1.2 1.725 0 2.925 1.2 1.2 1.2 1.2 2.925 0 1.725-1.2 2.925-1.2 1.2-2.925 1.2Zm-13.225-.5q-.375 0-.637-.262-.263-.263-.263-.663v-5.425q0-.375.263-.638.262-.262.662-.262h5.425q.375 0 .638.262.262.263.262.663v5.425q0 .375-.262.638-.263.262-.663.262Zm13.225-1q1.1 0 1.863-.762.762-.763.762-1.863t-.762-1.863q-.763-.762-1.863-.762t-1.862.762q-.763.763-.763 1.863t.763 1.863q.762.762 1.862.762Zm-12.625-.5h4.25v-4.25h-4.25Zm4.975-10.5h4.3L12 5.65Zm2.15 0Zm-2.875 6.25ZM17.5 17.5Z"/>
+      </svg>
+      <p>مدیریت بوت کمپ‌ها</p>
+    </div>
+  </div>-->
+
+</div>
+<!-- end::sideBar -->
+<span class="version body2-medium">{{globalVariableService.VERSION}}</span>

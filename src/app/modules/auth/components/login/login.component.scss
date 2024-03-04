@@ -1,0 +1,106 @@
+@import "src/assets/sass/core/_utils/colors";
+
+::ng-deep body {
+  background-color: #ffffff;
+}
+
+.login-card {
+  //border: 1px solid #D8D8D8;
+  box-sizing: border-box;
+  border-radius: 28px;
+  padding: 24px;
+  width: 500px;
+  min-height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.login-btn {
+  height: 48px;
+  border: none;
+}
+
+input {
+  direction: ltr;
+}
+
+input::placeholder {
+  text-align: right;
+}
+
+.NobatonImg {
+  width: 155px !important;
+}
+
+.login-form {
+  width: 90%;
+  margin-top: 0px;
+}
+
+.item-card {
+  background-color: white;
+  width: 60%;
+  height: 100vh
+}
+
+.img-card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: $secondary-gray;
+  width: 40%;
+  height: 100vh;
+  //border-radius: 0 120px 120px 0;
+}
+
+.back-img-card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: $primary-blue;
+  width: 40%;
+  height: 100vh;
+  border-radius: 0 120px 120px 0;
+  box-shadow: 6px -1px 20px 3px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-text {
+  font-size: 32px;
+  margin-bottom: 60px;
+  font-weight: bolder;
+  color: $primary-blue;
+}
+
+@media (max-width: 768px) {
+
+  .login-card {
+    border: none;
+    box-sizing: border-box;
+    padding: 16px;
+  }
+
+  .item-card {
+    background-color: white;
+    width: 100%;
+    height: 100vh
+  }
+
+  .img-card {
+    background-color: $secondary-gray;
+    width: 0;
+    display: none;
+    height: 100vh
+  }
+
+  .back-img-card {
+    background-color: $secondary-gray;
+    width: 0;
+    height: 100vh
+  }
+
+}
+

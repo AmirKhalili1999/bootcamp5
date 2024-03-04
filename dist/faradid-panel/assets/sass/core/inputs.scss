@@ -1,0 +1,48 @@
+.input {
+  border: solid 1px #979797;
+  color: #222222;
+  height: 48px;
+  border-radius: 14px;
+  padding: 15px;
+  outline: none;
+}
+
+.input[aria-placeholder],
+.input::placeholder {
+  color: #979797;
+  direction: rtl !important;
+}
+
+.input[type=file]::file-selector-button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.input:-moz-placeholder {
+  text-align: right;
+}
+
+.input:-ms-input-placeholder {
+  text-align: right;
+}
+
+.input::-webkit-input-placeholder {
+  text-align: right;
+}
+
+.input:focus,
+.input:focus-within,
+.input:active {
+  border: solid 1px #003462;
+  color: #222222;
+  height: 48px;
+  border-radius: 14px;
+}
+
+.input:invalid {
+  border: solid 1px #D50B12;
+  color: #D50B12;
+  height: 48px;
+  border-radius: 14px;
+}
